@@ -1,6 +1,13 @@
-# :dragon_face: Stable DINO
+# :dragon_face: Stable-DINO
 
-Code will be available in [detrex](https://github.com/IDEA-Research/detrex)! Stay tuned!
+<h3>Detection Transformers with Stable Matching</h3>
+
+[Shilong Liu](http://www.lsl.zone/)\*, [Tianhe Ren](https://rentainhe.github.io/)\*, [Jiayu Chen](https://github.com/tuofeilunhifi)\*, [Zhaoyang Zeng](https://scholar.google.com/citations?user=bo2FdJUAAAAJ&hl=zh-CN&oi=ao), [Hao Zhang](https://scholar.google.com/citations?user=B8hPxMQAAAAJ&hl=zh-CN), [Feng Li](https://scholar.google.com/citations?user=ybRe9GcAAAAJ&hl=zh-CN), [Hongyang Li](https://github.com/LHY-HongyangLi), [Jun Huang](https://github.com/IDEA-Research/Stable-DINO), [Hang Su](https://scholar.google.com/citations?hl=en&user=dxN1_X0AAAAJ&view_op=list_works&sortby=pubdate), [Jun Zhu](https://scholar.google.com/citations?hl=en&user=axsP38wAAAAJ), [Lei Zhang](https://www.leizhang.org/)<sup>:email:</sup>.
+
+(\*) equal contribution, (<sup>:email:</sup>) corresponding author.
+
+- ArXiv Preprint: [Coming Soon]()
+- Code will be available in [detrex](https://github.com/IDEA-Research/detrex)! Stay tuned!
 
 ## :bulb: Highlight
 - **High performance.** Maybe the strongest object detector. **63.8** AP on COCO with Swin-Large backbones (only 218M parameters).
