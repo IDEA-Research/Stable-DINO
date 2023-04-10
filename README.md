@@ -9,6 +9,9 @@
 - ArXiv Preprint: [Coming Soon]()
 - Code will be available in [detrex](https://github.com/IDEA-Research/detrex)! Stay tuned!
 
+## :sparkles: News
+- **`12 Apr, 2023`:** Preprint our paper in ArXiv! 
+
 ## :bulb: Highlight
 - **High performance.** Maybe the strongest object detector. **63.8** AP on COCO with Swin-Large backbones (only 218M parameters).
 - **Easy to use.** Only a few lines of code to be modified on [DINO](https://github.com/IDEA-Research/DINO).
