@@ -13,7 +13,7 @@
 
 ![memory fusion](assets/memory_fusion.png)
 
-## Results:
+## :fries: Results:
 ResNet-50
 ![R50](assets/R50.png)
 
