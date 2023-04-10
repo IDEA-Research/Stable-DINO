@@ -2,7 +2,7 @@
 
 ## :bulb: Highlight
 - **High performance.** Maybe the strongest object detector.
-- **Easy to use.** Only a few lines of code to modified on [DINO](https://github.com/IDEA-Research/DINO)..
+- **Easy to use.** Only a few lines of code to be modified on [DINO](https://github.com/IDEA-Research/DINO).
 - **Lightweight.** Nearly no extra cost during training and inference compared with [DINO](https://github.com/IDEA-Research/DINO).
 
 ![Performance](assets/performance.png)
