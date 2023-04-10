@@ -3,7 +3,7 @@
 Code will be available soon! Stay tuned!
 
 ## :bulb: Highlight
-- **High performance.** Maybe the strongest object detector.
+- **High performance.** Maybe the strongest object detector. **63.8** AP on COCO with Swin-Large backbones.
 - **Easy to use.** Only a few lines of code to be modified on [DINO](https://github.com/IDEA-Research/DINO).
 - **Lightweight.** Nearly no extra cost during training and inference compared with [DINO](https://github.com/IDEA-Research/DINO).
 
@@ -21,6 +21,9 @@ ResNet-50
 
 Swin-L
 ![swinl](assets/swinl.png)
+
+Compare with SOTA methods
+![sota](assets/sota.png)
 
 Stable-MaskDINO. 
 ![smd](assets/stable_maskdino.png)
