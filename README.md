@@ -2,8 +2,8 @@
 
 ## :bulb: Highlight
 - **High performance.** Maybe the strongest object detector.
-- **Easy to use.** Only a few lines of code to modified on DINO.
-- **Lightweight.** Nearly on extra cost during training and inference compared with [DINO](https://github.com/IDEA-Research/DINO).
+- **Easy to use.** Only a few lines of code to modified on [DINO](https://github.com/IDEA-Research/DINO)..
+- **Lightweight.** Nearly no extra cost during training and inference compared with [DINO](https://github.com/IDEA-Research/DINO).
 
 ![Performance](assets/performance.png)
 
@@ -23,4 +23,10 @@ Swin-L
 Stable-MaskDINO. 
 ![smd](assets/stable_maskdino.png)
 
+## :poultry_leg: Related Projects:
+- [DINO](https://github.com/IDEA-Research/DINO)
+- [Mask DINO](https://github.com/IDEA-Research/MaskDINO)
+- [Grounding DINO](https://github.com/IDEA-Research/GroundingDINO)
+- [DN-DETR](https://github.com/IDEA-Research/DN-DETR)
+- [DAB-DETR](https://github.com/IDEA-Research/DAB-DETR)
 
