@@ -6,7 +6,7 @@ Code will be available in [detrex](https://github.com/IDEA-Research/detrex)! Sta
 - **High performance.** Maybe the strongest object detector. **63.8** AP on COCO with Swin-Large backbones (only 218M parameters).
 - **Easy to use.** Only a few lines of code to be modified on [DINO](https://github.com/IDEA-Research/DINO).
 - **Lightweight.** Nearly no extra cost during training and inference compared with [DINO](https://github.com/IDEA-Research/DINO).
-- **Generalization** Easy to combine with the existing DETR variants and boost the performance.
+- **Generalization.** Easy to combine with the existing DETR variants and boost the performance.
 
 ![Performance](assets/performance.png)
 
