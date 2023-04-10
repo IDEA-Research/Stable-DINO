@@ -1,5 +1,7 @@
 # :dragon_face: Stable DINO
 
+Code will be available soon!
+
 ## :bulb: Highlight
 - **High performance.** Maybe the strongest object detector.
 - **Easy to use.** Only a few lines of code to be modified on [DINO](https://github.com/IDEA-Research/DINO).
