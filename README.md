@@ -1,6 +1,6 @@
 # :dragon_face: Stable DINO
 
-Code will be available soon!
+Code will be available soon! Stay tuned!
 
 ## :bulb: Highlight
 - **High performance.** Maybe the strongest object detector.
