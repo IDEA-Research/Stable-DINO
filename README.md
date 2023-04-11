@@ -50,3 +50,14 @@
 - [DN-DETR](https://github.com/IDEA-Research/DN-DETR)
 - [DAB-DETR](https://github.com/IDEA-Research/DAB-DETR)
 
+## :avocado: Bibtex
+```bibtex
+@misc{liu2023detection,
+      title={Detection Transformer with Stable Matching}, 
+      author={Shilong Liu and Tianhe Ren and Jiayu Chen and Zhaoyang Zeng and Hao Zhang and Feng Li and Hongyang Li and Jun Huang and Hang Su and Jun Zhu and Lei Zhang},
+      year={2023},
+      eprint={2304.04742},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
