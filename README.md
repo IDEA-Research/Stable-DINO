@@ -6,11 +6,11 @@
 
 (\*) equal contribution, (<sup>:email:</sup>) corresponding author.
 
-- ArXiv Preprint: [Coming Soon]()
+- ArXiv Preprint: [arXiv 2304.04742](https://arxiv.org/abs/2304.04742)
 - Code will be available in [detrex](https://github.com/IDEA-Research/detrex)! Stay tuned!
 
 ## :sparkles: News
-- **`12 Apr, 2023`:** Preprint our paper in ArXiv! 
+- **`12 Apr, 2023`:** Preprint our paper in [ArXiv](https://arxiv.org/abs/2304.04742)! 
 
 ## :bulb: Highlight
 - **High performance.** Maybe the strongest object detector. **63.8** AP on COCO with Swin-Large backbones (only 218M parameters).
