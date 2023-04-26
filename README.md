@@ -55,12 +55,25 @@
 - [DAB-DETR](https://github.com/IDEA-Research/DAB-DETR)
 
 ## :avocado: Bibtex
-```bibtex
+If you use Stable-DINO in your research or wish to refer to the baseline results published here, please use the following BibTeX entry.
+
+```BibTeX
 @misc{liu2023detection,
       title={Detection Transformer with Stable Matching}, 
       author={Shilong Liu and Tianhe Ren and Jiayu Chen and Zhaoyang Zeng and Hao Zhang and Feng Li and Hongyang Li and Jun Huang and Hang Su and Jun Zhu and Lei Zhang},
       year={2023},
       eprint={2304.04742},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
+
+```BibTeX
+@misc{ren2023strong,
+      title={A Strong and Reproducible Object Detector with Only Public Datasets}, 
+      author={Tianhe Ren and Jianwei Yang and Shilong Liu and Ailing Zeng and Feng Li and Hao Zhang and Hongyang Li and Zhaoyang Zeng and Lei Zhang},
+      year={2023},
+      eprint={2304.13027},
       archivePrefix={arXiv},
       primaryClass={cs.CV}
 }
