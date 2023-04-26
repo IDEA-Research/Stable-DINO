@@ -10,7 +10,7 @@
 - Code will be available in [detrex](https://github.com/IDEA-Research/detrex)! Stay tuned!
 
 ## :sparkles: News
-- **`26 Apr, 2023`:** By combining with [FocalNet-Huge](https://github.com/microsoft/FocalNet) backbone, Focal-Stable-DINO achieves **64.8 AP** on COCO test-dev *without* any test time augmentation! Check our [Technical Report](https://arxiv.org/abs/2304.13027) for more details.
+- **`26 Apr, 2023`:** By combining with [FocalNet-Huge](https://github.com/microsoft/FocalNet) backbone, Focal-Stable-DINO achieves **64.8 AP** on COCO test-dev [leadboard](https://codalab.lisn.upsaclay.fr/competitions/7384#results) *without* any test time augmentation! Check our [Technical Report](https://arxiv.org/abs/2304.13027) for more details.
 - **`12 Apr, 2023`:** Preprint our paper on [ArXiv](https://arxiv.org/abs/2304.04742)! 
 
 ## :bulb: Highlight
