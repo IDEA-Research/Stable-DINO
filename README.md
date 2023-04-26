@@ -9,6 +9,7 @@
 (\*) equal contribution, (<sup>:email:</sup>) corresponding author.
 
 - ArXiv Preprint: [arXiv 2304.04742](https://arxiv.org/abs/2304.04742)
+- Focal-Stable-DINO Technical Report: [arXiv 2304.13027](https://arxiv.org/abs/2304.13027)
 - Code will be available in [detrex](https://github.com/IDEA-Research/detrex)! Stay tuned!
 
 ## :sparkles: News
