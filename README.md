@@ -13,12 +13,12 @@
 - Code will be available in [detrex](https://github.com/IDEA-Research/detrex)! Stay tuned!
 
 ## :sparkles: News
-- **`26 Apr, 2023`:** By combining with [FocalNet-Huge](https://github.com/microsoft/FocalNet) backbone, Focal-Stable-DINO achieves **64.8 AP** on COCO test-dev *without* any test time augmentation! Check our [Technical Report](https://arxiv.org/abs/2304.13027) for more details.
+- **`26 Apr, 2023`:** By combining with [FocalNet-Huge](https://github.com/microsoft/FocalNet) backbone, Focal-Stable-DINO achieves **64.6 AP** on COCO val2017 and **64.8 AP** on COCO test-dev *without* any test time augmentation! Check our [Technical Report](https://arxiv.org/abs/2304.13027) for more details.
 - **`12 Apr, 2023`:** Preprint our paper on [ArXiv](https://arxiv.org/abs/2304.04742)! 
 
 ## :bulb: Highlight
 - **High performance.** Maybe the strongest object detector. **63.8** AP on COCO with Swin-Large backbones (only 218M parameters).
-- **Scalable.** Combining with larger backbone FocalNet-Huge (only 689M parameters), Stable-DINO still improves the performance to **64.8 AP** on COCO.
+- **Scalable.** Combining with larger backbone FocalNet-Huge (only 689M parameters), Stable-DINO still improves the performance to **64.6 AP** on COCO val2017 and **64.8 AP** on COCO test-dev *without* any test time augmentation.
 - **Easy to use.** Only a few lines of code to be modified on [DINO](https://github.com/IDEA-Research/DINO).
 - **Lightweight.** Nearly no extra cost during training and inference compared with [DINO](https://github.com/IDEA-Research/DINO).
 - **Generalization.** Easy to combine with the existing DETR variants and boost the performance.
