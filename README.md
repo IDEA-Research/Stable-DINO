@@ -65,7 +65,7 @@
 - [DN-DETR](https://github.com/IDEA-Research/DN-DETR)
 - [DAB-DETR](https://github.com/IDEA-Research/DAB-DETR)
 
-## Citing Stable-DINO
+## :avocado: Citing Stable-DINO
 If you use Stable-DINO in your research or wish to refer to the baseline results published here, please use the following BibTeX entry.
 
 ```BibTeX
