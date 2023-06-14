@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="./assets/logo.png" width="25%">
+</div>
+
 # :dragon_face: Stable-DINO
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/a-strong-and-reproducible-object-detector/object-detection-on-coco-minival)](https://paperswithcode.com/sota/object-detection-on-coco-minival?p=a-strong-and-reproducible-object-detector) [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/a-strong-and-reproducible-object-detector/object-detection-on-coco)](https://paperswithcode.com/sota/object-detection-on-coco?p=a-strong-and-reproducible-object-detector)
