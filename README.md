@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/logo.png" width="25%">
+  <img src="./assets/logo.png" width="30%">
 </div>
 
 # :dragon_face: Stable-DINO
