@@ -16,11 +16,8 @@
 
 (\*) equal contribution, (<sup>:email:</sup>) corresponding author.
 
-[[`Stable-DINO Paper`](https://arxiv.org/abs/2304.04742)] [[`Focal-Stable-DINO Report`](https://arxiv.org/abs/2304.13027)] [[`BibTex`](#avocado-citing-stable-dino)] [[`Code in detrex (coming soon)`](https://github.com/IDEA-Research/detrex)]
+[[`Stable-DINO Paper`](https://arxiv.org/abs/2304.04742)] [[`Focal-Stable-DINO Report`](https://arxiv.org/abs/2304.13027)] [[`BibTex`](#avocado-citing-stable-dino)] [[`Code in detrex`](https://github.com/IDEA-Research/Stable-DINO)]
 
-<!-- - Stable-DINO ArXiv Preprint: [arXiv 2304.04742](https://arxiv.org/abs/2304.04742)
-- Focal-Stable-DINO Technical Report: [arXiv 2304.13027](https://arxiv.org/abs/2304.13027)
-- Code will be available in [detrex](https://github.com/IDEA-Research/detrex)! Stay tuned! -->
 
 ## :sparkles: News
 - **`14 Jul, 2023`:** Stable-DINO is accepted to ICCV 2023!

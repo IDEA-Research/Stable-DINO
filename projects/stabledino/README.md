@@ -1,276 +1,113 @@
-## DINO: DETR with Improved DeNoising Anchor Boxes for End-to-End Object Detection
-
-Hao Zhang, Feng Li, Shilong Liu, Lei Zhang, Hang Su, Jun Zhu, Lionel M. Ni, Heung-Yeung Shum
-
-[[`arXiv`](https://arxiv.org/abs/2203.03605)] [[`BibTeX`](#citing-dino)]
-
 <div align="center">
-  <img src="./assets/dino_arch.png"/>
-</div><br/>
+  <img src="../../assets/logo.png" width="30%">
+</div>
 
-## Main Results with Pretrained Models
+<h2 align="center"> :dragon_face: Stable-DINO: Detection Transformer with Stable Matching </h2>
 
-**Pretrained DINO with ResNet Backbone**
+<div align="left">
+  
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/a-strong-and-reproducible-object-detector/object-detection-on-coco-minival)](https://paperswithcode.com/sota/object-detection-on-coco-minival?p=a-strong-and-reproducible-object-detector) [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/a-strong-and-reproducible-object-detector/object-detection-on-coco)](https://paperswithcode.com/sota/object-detection-on-coco?p=a-strong-and-reproducible-object-detector)
 
-<table><tbody>
-<!-- START TABLE -->
-<!-- TABLE HEADER -->
-<th valign="bottom">Name</th>
-<th valign="bottom">Backbone</th>
-<th valign="bottom">Pretrain</th>
-<th valign="bottom">Epochs</th>
-<th valign="bottom">Denoising Queries</th>
-<th valign="bottom">box<br/>AP</th>
-<th valign="bottom">download</th>
-<!-- TABLE BODY -->
-<!-- ROW: dino_r50_4scale_12ep -->
- <tr><td align="left"><a href="configs/dino_r50_4cale_12ep.py">DINO-R50-4scale</a></td>
-<td align="center">R-50</td>
-<td align="center">IN1k</td>
-<td align="center">12</td>
-<td align="center">100</td>
-<td align="center">49.2</td>
-<td align="center"> <a href="https://github.com/IDEA-Research/detrex-storage/releases/download/v0.2.0/dino_r50_4scale_12ep_49_2AP.pth">model</a></td>
-</tr>
-<!-- ROW: dino_r50_4scale_12ep -->
- <tr><td align="left"><a href="configs/dino_r50_5cale_12ep.py">DINO-R50-4scale</a></td>
-<td align="center">R-50</td>
-<td align="center">IN1k</td>
-<td align="center">12</td>
-<td align="center">100</td>
-<td align="center">49.6</td>
-<td align="center"> <a href="https://github.com/IDEA-Research/detrex-storage/releases/download/v0.2.1/dino_r50_5scale_12ep.pth">model</a></td>
-</tr>
-<!-- ROW: dino_r50_4scale_12ep_300dn -->
- <tr><td align="left"><a href="configs/dino_r50_4scale_12ep_300dn.py">DINO-R50-4scale</a></td>
-<td align="center">R-50</td>
-<td align="center">IN1k</td>
-<td align="center">12</td>
-<td align="center">300</td>
-<td align="center">49.5</td>
-<td align="center"> <a href="https://github.com/IDEA-Research/detrex-storage/releases/download/v0.2.0/dino_r50_4scale_12ep_300dn.pth">model</a></td>
-</tr>
-<!-- ROW: dino_r50_4scale_24ep -->
- <tr><td align="left"><a href="configs/dino_r50_4cale_24ep.py">DINO-R50-4scale</a></td>
-<td align="center">R-50</td>
-<td align="center">IN1k</td>
-<td align="center">24</td>
-<td align="center">100</td>
-<td align="center">50.6</td>
-<td align="center"> <a href="https://github.com/IDEA-Research/detrex-storage/releases/download/v0.1.1/dino_r50_4scale_24ep.pth">model</a></td>
-</tr>
-<!-- ROW: dino_r101_4scale_12ep -->
- <tr><td align="left"><a href="configs/dino_r101_4cale_12ep.py">DINO-R101-4scale</a></td>
-<td align="center">R-101</td>
-<td align="center">IN1k</td>
-<td align="center">12</td>
-<td align="center">100</td>
-<td align="center">50.0</td>
-<td align="center"> <a href="https://github.com/IDEA-Research/detrex-storage/releases/download/v0.1.1/dino_r101_4scale_12ep.pth">model</a></td>
-</tr>
-</tbody></table>
+</div>
 
-**Pretrained DINO with Swin-Transformer Backbone**
-<table><tbody>
-<th valign="bottom">Name</th>
-<th valign="bottom">Backbone</th>
-<th valign="bottom">Pretrain</th>
-<th valign="bottom">Epochs</th>
-<th valign="bottom">Denoising Queries</th>
-<th valign="bottom">box<br/>AP</th>
-<th valign="bottom">download</th>
-<!-- ROW: dino_swin_tiny_4cale_12ep -->
- <tr><td align="left"><a href="configs/dino_swin_tiny_4cale_12ep.py">DINO-Swin-T-224-4scale</a></td>
-<td align="center">Swin-Tiny-224</td>
-<td align="center">IN1k</td>
-<td align="center">12</td>
-<td align="center">100</td>
-<td align="center">51.3</td>
-<td align="center"> <a href="https://github.com/IDEA-Research/detrex-storage/releases/download/v0.1.1/dino_swin_tiny_224_4scale_12ep.pth">model</a></td>
-</tr>
-<!-- ROW: dino_swin_tiny_4cale_12ep -->
- <tr><td align="left"><a href="configs/dino_swin_tiny_4cale_12ep.py">DINO-Swin-T-224-4scale</a></td>
-<td align="center">Swin-Tiny-224</td>
-<td align="center">IN22k to IN1k</td>
-<td align="center">12</td>
-<td align="center">100</td>
-<td align="center">52.5</td>
-<td align="center"> <a href="https://github.com/IDEA-Research/detrex-storage/releases/download/v0.1.1/dino_swin_tiny_224_22kto1k_finetune_4scale_12ep.pth">model</a></td>
-</tr>
-<!-- ROW: dino_swin_small_4cale_12ep -->
- <tr><td align="left"><a href="configs/dino_swin_small_224_4scale_12ep.py">DINO-Swin-S-224-4scale</a></td>
-<td align="center">Swin-Small-224</td>
-<td align="center">IN1k</td>
-<td align="center">12</td>
-<td align="center">100</td>
-<td align="center">53.0</td>
-<td align="center"> <a href="https://github.com/IDEA-Research/detrex-storage/releases/download/v0.1.1/dino_swin_small_224_4scale_12ep.pth">model</a></td>
-</tr>
-<!-- ROW: dino_swin_base_4scale_12ep -->
- <tr><td align="left"><a href="configs/dino_swin_base_384_4scale_12ep.py">DINO-Swin-B-384-4scale</a></td>
-<td align="center">Swin-Base-384</td>
-<td align="center">IN22k to IN1k</td>
-<td align="center">12</td>
-<td align="center">100</td>
-<td align="center">55.8</td>
-<td align="center"> <a href="https://github.com/IDEA-Research/detrex-storage/releases/download/v0.1.1/dino_swin_base_384_4scale_12ep.pth">model</a></td>
-</tr>
-<!-- ROW: dino_swin_large_224_4scale_12ep -->
- <tr><td align="left"><a href="configs/dino_swin_large_224_4scale_12ep.py">DINO-Swin-L-224-4scale</a></td>
-<td align="center">Swin-Large-224</td>
-<td align="center">IN22k to IN1k</td>
-<td align="center">12</td>
-<td align="center">100</td>
-<td align="center">56.9</td>
-<td align="center"> <a href="https://github.com/IDEA-Research/detrex-storage/releases/download/v0.1.1/dino_swin_large_224_4scale_12ep.pth">model</a></td>
-</tr>
-<!-- ROW: dino_swin_large_4scale_12ep -->
- <tr><td align="left"><a href="configs/dino_swin_large_384_4scale_12ep.py">DINO-Swin-L-384-4scale</a></td>
-<td align="center">Swin-Large-384</td>
-<td align="center">IN22k to IN1k</td>
-<td align="center">12</td>
-<td align="center">100</td>
-<td align="center">56.9</td>
-<td align="center"> <a href="https://github.com/IDEA-Research/detrex-storage/releases/download/v0.1.1/dino_swin_large_4scale_12ep.pth">model</a></td>
-</tr>
- <tr><td align="left"><a href="configs/dino_swin_large_384_5scale_12ep.py">DINO-Swin-L-384-5scale</a></td>
-<td align="center">Swin-Large-384</td>
-<td align="center">IN22k to IN1k</td>
-<td align="center">12</td>
-<td align="center">100</td>
-<td align="center">57.5</td>
-<td align="center"> <a href="https://github.com/IDEA-Research/detrex-storage/releases/download/v0.2.1/dino_swin_large_384_5scale_12ep.pth">model</a></td>
-</tr>
-<!-- ROW: dino_swin_large_4scale_36ep -->
- <tr><td align="left"><a href="configs/dino_swin_large_384_4scale_36
- ep.py">DINO-Swin-L-384-4scale</a></td>
-<td align="center">Swin-Large-384</td>
-<td align="center">IN22k to IN1k</td>
-<td align="center">36</td>
-<td align="center">100</td>
-<td align="center">58.1</td>
-<td align="center"> <a href="https://github.com/IDEA-Research/detrex-storage/releases/download/v0.2.0/dino_swin_large_384_4scale_36ep.pth">model</a></td>
-</tr>
- <tr><td align="left"><a href="configs/dino_swin_large_384_5scale_36
- ep.py">DINO-Swin-L-384-5scale</a></td>
-<td align="center">Swin-Large-384</td>
-<td align="center">IN22k to IN1k</td>
-<td align="center">36</td>
-<td align="center">100</td>
-<td align="center">58.5</td>
-<td align="center"> <a href="https://github.com/IDEA-Research/detrex-storage/releases/download/v0.2.1/dino_swin_large_384_5scale_36ep.pth">model</a></td>
-</tr>
-</tbody></table>
+**[IDEA-CVR, IDEA-Research](https://github.com/IDEA-Research)** 
 
-**Pretrained DINO with FocalNet Backbone**
-<table><tbody>
-<th valign="bottom">Name</th>
-<th valign="bottom">Backbone</th>
-<th valign="bottom">Pretrain</th>
-<th valign="bottom">Epochs</th>
-<th valign="bottom">Denoising Queries</th>
-<th valign="bottom">box<br/>AP</th>
-<th valign="bottom">download</th>
- <tr><td align="left"><a href="configs/dino_focalnet_large_lrf_384_4scale_12ep
- ep.py">DINO-Focal-Large-4scale</a></td>
-<td align="center">FocalNet-384-LRF-3Level</td>
-<td align="center">IN22k</td>
-<td align="center">12</td>
-<td align="center">100</td>
-<td align="center">57.5</td>
-<td align="center"> <a href="https://github.com/IDEA-Research/detrex-storage/releases/download/v0.2.1/dino_focal_large_lrf_384_4scale_12ep.pth">model</a></td>
-</tr>
- <tr><td align="left"><a href="configs/dino_focalnet_large_lrf_384_4scale_12ep
- ep.py">DINO-Focal-Large-4scale</a></td>
-<td align="center">FocalNet-384-LRF-4Level</td>
-<td align="center">IN22k</td>
-<td align="center">12</td>
-<td align="center">100</td>
-<td align="center">58.0</td>
-<td align="center"> <a href="https://github.com/IDEA-Research/detrex-storage/releases/download/v0.2.1/dino_focal_large_lrf_384_fl4_4scale_12ep.pth">model</a></td>
-</tr>
-</tbody></table>
+[Shilong Liu](http://www.lsl.zone/)\*, [Tianhe Ren](https://rentainhe.github.io/)\*, [Jiayu Chen](https://github.com/tuofeilunhifi)\*, [Zhaoyang Zeng](https://scholar.google.com/citations?user=U_cvvUwAAAAJ&hl=zh-CN&oi=ao), [Hao Zhang](https://scholar.google.com/citations?user=B8hPxMQAAAAJ&hl=zh-CN), [Feng Li](https://scholar.google.com/citations?user=ybRe9GcAAAAJ&hl=zh-CN), [Hongyang Li](https://github.com/LHY-HongyangLi), [Jun Huang](https://github.com/IDEA-Research/Stable-DINO), [Hang Su](https://scholar.google.com/citations?hl=en&user=dxN1_X0AAAAJ&view_op=list_works&sortby=pubdate), [Jun Zhu](https://scholar.google.com/citations?hl=en&user=axsP38wAAAAJ), [Lei Zhang](https://www.leizhang.org/)<sup>:email:</sup>.
 
-**Pretrained DINO with ViT Backbone**
-<table><tbody>
-<th valign="bottom">Name</th>
-<th valign="bottom">Backbone</th>
-<th valign="bottom">Pretrain</th>
-<th valign="bottom">Epochs</th>
-<th valign="bottom">Denoising Queries</th>
-<th valign="bottom">box<br/>AP</th>
-<th valign="bottom">download</th>
- <tr><td align="left"><a href="configs/dino_vitdet_base_4scale_12ep
- ep.py">DINO-ViTDet-Base-4scale</a></td>
-<td align="center">ViT</td>
-<td align="center">IN1k, MAE</td>
-<td align="center">12</td>
-<td align="center">100</td>
-<td align="center">50.2</td>
-<td align="center"> <a href="https://github.com/IDEA-Research/detrex-storage/releases/download/v0.2.1/dino_vitdet_4scale_12ep.pth">model</a></td>
-</tr>
- <tr><td align="left"><a href="configs/dino_vitdet_base_4scale_50ep
- ep.py">DINO-ViTDet-Base-4scale</a></td>
-<td align="center">ViT</td>
-<td align="center">IN1k, MAE</td>
-<td align="center">50</td>
-<td align="center">100</td>
-<td align="center">55.0</td>
-<td align="center"> <a href="https://github.com/IDEA-Research/detrex-storage/releases/download/v0.2.1/dino_vitdet_base_4scale_50ep.pth">model</a></td>
-</tr>
- <tr><td align="left"><a href="configs/dino_vitdet_large_4scale_12ep
- ep.py">DINO-ViTDet-Large-4scale</a></td>
-<td align="center">ViT</td>
-<td align="center">IN1k, MAE</td>
-<td align="center">12</td>
-<td align="center">100</td>
-<td align="center">52.9</td>
-<td align="center"> <a href="https://github.com/IDEA-Research/detrex-storage/releases/download/v0.2.1/dino_vitdet_large_4scale_12ep.pth">model</a></td>
-</tr>
- <tr><td align="left"><a href="configs/dino_vitdet_large_4scale_50ep
- ep.py">DINO-ViTDet-Large-4scale</a></td>
-<td align="center">ViT</td>
-<td align="center">IN1k, MAE</td>
-<td align="center">50</td>
-<td align="center">100</td>
-<td align="center">57.5</td>
-<td align="center"> <a href="https://github.com/IDEA-Research/detrex-storage/releases/download/v0.2.1/dino_vitdet_large_4scale_50ep.pth">model</a></td>
-</tr>
-</tbody></table>
+(\*) equal contribution, (<sup>:email:</sup>) corresponding author.
 
-**Note**: 
-- `Swin-X-384` means the backbone pretrained resolution is `384 x 384` and `IN22k to In1k` means the model is pretrained on `ImageNet-22k` and finetuned on `ImageNet-1k`.
-- ViT backbone using MAE pretraining weights following [ViTDet](https://github.com/facebookresearch/detectron2/tree/main/projects/ViTDet)  which can be downloaded in [MAE](https://github.com/facebookresearch/mae). And it's not stable to train ViTDet-DINO without warmup lr-scheduler.
-- `Focal-LRF-3Level`: means using `Large-Receptive-Field (LRF)` and `Focal-Level` is setted to `3`, please refer to [FocalNet](https://github.com/microsoft/FocalNet) for more details about the backbone settings.
+[[`Stable-DINO Paper`](https://arxiv.org/abs/2304.04742)] [[`Focal-Stable-DINO Report`](https://arxiv.org/abs/2304.13027)] [[`BibTex`](#avocado-citing-stable-dino)] [[`Code in detrex`](https://github.com/IDEA-Research/Stable-DINO)]
 
-**Notable facts and caveats**: The position embedding of DINO in detrex is different from the original repo. We set the tempureture and offsets in `PositionEmbeddingSine` to `10000` and `-0.5` which may make the model converge a little bit faster in the early stage and get a slightly better results (about 0.1mAP) in 12 epochs settings.
+<!-- - Stable-DINO ArXiv Preprint: [arXiv 2304.04742](https://arxiv.org/abs/2304.04742)
+- Focal-Stable-DINO Technical Report: [arXiv 2304.13027](https://arxiv.org/abs/2304.13027)
+- Code will be available in [detrex](https://github.com/IDEA-Research/detrex)! Stay tuned! -->
+
+## :sparkles: News
+- **`14 Jul, 2023`:** Stable-DINO is accepted to ICCV 2023!
+- **`26 Apr, 2023`:** By combining with [FocalNet-Huge](https://github.com/microsoft/FocalNet) backbone, Focal-Stable-DINO achieves **64.6 AP** on COCO val2017 and **64.8 AP** on [COCO test-dev](https://codalab.lisn.upsaclay.fr/competitions/7384#results) *without* any test time augmentation! Check our [Technical Report](https://arxiv.org/abs/2304.13027) for more details.
+- **`12 Apr, 2023`:** Preprint our paper on [ArXiv](https://arxiv.org/abs/2304.04742)! 
+
+## :bulb: Highlight
+- **High performance.** Maybe the strongest object detector. **63.8** AP on COCO with Swin-Large backbones (only 218M parameters).
+- **Scalable.** Combining with larger backbone FocalNet-Huge (only 689M parameters), Stable-DINO still improves the performance to **64.6 AP** on COCO val2017 and **64.8 AP** on COCO test-dev *without* any test time augmentation.
+- **Easy to use.** Only a few lines of code to be modified on [DINO](https://github.com/IDEA-Research/DINO).
+- **Lightweight.** Nearly no extra cost during training and inference compared with [DINO](https://github.com/IDEA-Research/DINO).
+- **Generalization.** Easy to combine with the existing DETR variants and boost the performance.
+
+![Performance](../../assets/performance.png)
 
 
-## Training
-All configs can be trained with:
+## :open_book: Methods:
+![stable matching](../../assets/stable_matching.png)
+
+![memory fusion](../../assets/memory_fusion.png)
+
+## :fries: Results:
+- *ResNet-50 Backbone*
+![R50](../../assets/R50.png)
+
+- *Swin-L Backbone*
+![swinl](../../assets/swinl.png)
+
+- *Compare with SOTA methods*
+![sota](../../assets/sota.png)
+
+- *Stable-MaskDINO*
+![smd](../../assets/stable_maskdino.png)
+
+<!-- - *Generalization*
+![general](assets/generalization.png) -->
+
+## Run
+Our code is implemented on [detrex](https://github.com/IDEA-Research/detrex).
+
+1. Install detrex and data preparation
+
+Please follow the [detrex instruction](https://detrex.readthedocs.io/en/latest/tutorials/Installation.html) for installation and data preparation.
+
+2. Training scripts
+
+We provide a training example of Stable DINO R50. Refer to the [detrex doc](https://detrex.readthedocs.io/en/latest/tutorials/Getting_Started.html) for more details
+
 ```bash
-cd detrex
-python tools/train_net.py --config-file projects/dino/configs/path/to/config.py --num-gpus 8
-```
-By default, we use 8 GPUs with total batch size as 16 for training.
-
-## Evaluation
-Model evaluation can be done as follows:
-```bash
-cd detrex
-python tools/train_net.py --config-file projects/dino/configs/path/to/config.py --eval-only train.init_checkpoint=/path/to/model_checkpoint
+CUDA_VISIBLE_DEVICES=0 \
+python tools/train_net.py \
+    --config-file projects/stabledino/configs/stabledino_r50_4scale_12ep.py \
+    --num-gpus 1 \
+    dataloader.train.total_batch_size=4 \
+    train.output_dir="./output/stabledino_r50_4scale_12ep" \
+    train.test_with_nms=0.80 
 ```
 
 
-## Citing DINO
-If you find our work helpful for your research, please consider citing the following BibTeX entry.
 
-```BibTex
-@misc{zhang2022dino,
-      title={DINO: DETR with Improved DeNoising Anchor Boxes for End-to-End Object Detection}, 
-      author={Hao Zhang and Feng Li and Shilong Liu and Lei Zhang and Hang Su and Jun Zhu and Lionel M. Ni and Heung-Yeung Shum},
-      year={2022},
-      eprint={2203.03605},
+## :poultry_leg: Related Projects:
+- [DINO](https://github.com/IDEA-Research/DINO)
+- [Mask DINO](https://github.com/IDEA-Research/MaskDINO)
+- [Grounding DINO](https://github.com/IDEA-Research/GroundingDINO)
+- [DN-DETR](https://github.com/IDEA-Research/DN-DETR)
+- [DAB-DETR](https://github.com/IDEA-Research/DAB-DETR)
+
+## :avocado: Citing Stable-DINO
+If you use Stable-DINO in your research or wish to refer to the baseline results published here, please use the following BibTeX entry.
+
+```BibTeX
+@misc{liu2023detection,
+      title={Detection Transformer with Stable Matching}, 
+      author={Shilong Liu and Tianhe Ren and Jiayu Chen and Zhaoyang Zeng and Hao Zhang and Feng Li and Hongyang Li and Jun Huang and Hang Su and Jun Zhu and Lei Zhang},
+      year={2023},
+      eprint={2304.04742},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
+
+```BibTeX
+@misc{ren2023strong,
+      title={A Strong and Reproducible Object Detector with Only Public Datasets}, 
+      author={Tianhe Ren and Jianwei Yang and Shilong Liu and Ailing Zeng and Feng Li and Hao Zhang and Hongyang Li and Zhaoyang Zeng and Lei Zhang},
+      year={2023},
+      eprint={2304.13027},
       archivePrefix={arXiv},
       primaryClass={cs.CV}
 }
