@@ -58,6 +58,28 @@
 <!-- - *Generalization*
 ![general](assets/generalization.png) -->
 
+## Run
+Our code is implemented on [detrex](https://github.com/IDEA-Research/detrex).
+
+1. Install detrex and data preparation
+
+Please follow the [detrex instruction](https://detrex.readthedocs.io/en/latest/tutorials/Installation.html) for installation and data preparation.
+
+2. Training scripts
+
+We provide a training example of Stable DINO R50. Refer to the [detrex doc](https://detrex.readthedocs.io/en/latest/tutorials/Getting_Started.html) for more details
+
+```bash
+CUDA_VISIBLE_DEVICES=0 \
+python tools/train_net.py \
+    --config-file projects/stabledino/configs/stabledino_r50_4scale_12ep.py \
+    --num-gpus 1 \
+    dataloader.train.total_batch_size=4 \
+    train.output_dir="./output/stabledino_r50_4scale_12ep" \
+    train.test_with_nms=0.80 
+```
+
+
 
 ## :poultry_leg: Related Projects:
 - [DINO](https://github.com/IDEA-Research/DINO)
